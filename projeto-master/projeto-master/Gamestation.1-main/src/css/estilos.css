@@ -1,0 +1,376 @@
+body{
+
+    background-color: yellow;
+    color: black;
+    margin: 0 auto;
+
+}
+
+#cabeçalho{
+
+    background-color: darkblue;
+    color: #FFD700;
+    padding: 4.0rem;
+    margin: 0 auto;
+
+}
+
+#títulocabeçalho{
+
+    text-align: center;
+    font-family: verdana;
+    font-size: 1.8rem;
+    font-style: italic;
+    position: absolute;
+    left: 150;
+    top: 5;
+
+}
+
+#gamepad{
+
+    display: inline-flex;
+    position: absolute;
+    top: -20;
+    left: -10;
+    
+
+}
+
+#h3-cabeçalho{
+
+    text-align: center;
+    font-family: verdana;
+    font-size: 1.2rem;
+    position: absolute;
+    left: 150;
+    top: 60;
+    
+
+}
+
+#categorias{
+
+    background-color: white;
+    border-width: 1;
+    border-style: solid;
+    border-radius: 5%;
+    padding: 2%;
+    padding-bottom: 5%;
+    margin: 5%;
+    margin-top: 2%;
+    text-align: center;
+
+}
+
+#texto-categorias{
+
+    font-family: verdana;
+    font-size: 1.6rem;
+    color: darkblue;
+
+}
+
+ #icone-corrida{
+
+   
+    position: relative;
+    left: -175;
+    top: 33;
+    height: 100px;
+    width: 100px;
+    margin-top: -40px;
+    margin-left: -110px;
+}
+
+#barra-pesquisa{
+
+    position: absolute;
+    right: 20; 
+    top: 50;
+    
+
+}
+
+    #barra-pesquisa input{
+
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 2px solid black;
+    border-radius: 3%;
+
+    }
+
+    #barra-pesquisa button{
+
+        padding: 0.5rem;
+        font-size: 1rem;
+        border:2px solid black;
+        background-color: #FFD700;
+        border-radius: 15%;
+    }
+
+#ultimas-noticias{
+
+    background-color: white;
+    border-width: 1;
+    border-style: solid;
+    border-radius: 5%;
+    padding: 2%;
+    padding-bottom: 50%;
+    margin: 5%;
+    margin-top: 2%;
+    text-align: center;
+
+}
+
+#texto-ultimas-noticias{
+
+    font-family: verdana;
+    font-size: 1.5rem;
+    color: darkblue;
+
+}
+
+#top-páginas-acessadas-do-site{
+
+    background-color: white;
+    border-width: 1;
+    border-style: solid;
+    border-radius: 5%;
+    padding: 2%;
+    padding-bottom: 50%;
+    margin: 5%;
+    margin-top: 2%;
+    text-align: center;
+
+}
+
+#top-páginas-acessadas{
+
+    font-family: verdana;
+    font-size: 1.5rem;
+    color: darkblue;
+
+}
+
+#newsletter{
+
+    background-color: white;
+    border-width: 1;
+    border-style: solid;
+    border-radius: 5%;
+    padding: 2%;
+    padding-bottom: 3%;
+    margin: 5%;
+    margin-top: 2%;
+    text-align: center;
+    
+
+}
+    #newsletter-title{
+
+    font-family: verdana;
+    font-size: 1.5rem;
+    color: darkblue;
+
+    }
+
+    .inputs-form{
+
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 2px solid black;
+    border-radius: 10%;
+    }
+
+   
+
+#botão-menu{
+
+    position: absolute;
+    top: 45;
+    right: 400;
+    font-size: 1.5rem;
+    background-color: #FFD700;
+    color: darkblue;
+    border: solid 2px black;
+    padding: 0.5rem 1rem;
+    border-radius: 15%;
+    cursor: pointer;
+    
+
+}
+
+#menu-lateral{
+
+    height:100%;
+    width:0;
+    position: fixed;
+    z-index: 1000;
+    top:0;
+    left:0;
+    background-color: darkblue;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    border: solid 1px black;
+}	
+
+.Botões-laterais {
+
+    align-items: row;
+    position: absolute;
+    background-color: #FFD700;
+    font-size: 1.2rem;
+    left: 30;
+    padding: 0.3rem 0.7rem;
+    border-radius: 10%;
+    border: solid 2px black;
+    font-family: verdana;
+}
+
+#lista-categorias{
+
+    display: flex; /* Alinha os itens horizontalmente */
+    overflow-x: auto; /* Habilita a rolagem horizontal */
+    gap: 1rem; /* Espaçamento entre os itens */
+    padding: 1rem; 
+    scroll-behavior: smooth; /* Rolagem suave */
+    border: 3px solid black;
+    font-size: 1.4rem;
+    
+
+}
+
+.categoria {
+
+    flex: 0 0 auto; /* Impede que os itens encolham ou cresçam */
+    background-color: #FFD700;
+    color: darkblue;
+    padding: 2rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    border: 2px solid black;
+    border-radius: 10%;
+    text-align: center;
+    text-decoration: none; /* Remove o sublinhado dos links */
+    font-family: verdana;
+    font-weight: bold;
+    transition: transform 0.2s ease;
+  
+    min-width: 200px; /* Largura mínima para cada categoria */
+    cursor: pointer;
+}
+   .categoria:hover{
+
+    transform: scale(1.05); /* Aumenta ligeiramente o tamanho ao passar o mouse */
+    background-color: darkblue; /* Muda a cor de fundo ao passar o mouse */
+    color: #FFD700; /* Muda a cor do texto ao passar o mouse */
+
+    }
+
+   
+    
+
+#rodapé{
+
+    background-color: darkblue;
+    color: #FFD700;
+    padding: 1.0rem;
+    text-align: center;
+    margin-top: 2%;
+    border-top: solid 1px black;
+
+}
+
+
+.jogos{
+
+    background-color: white;
+    margin-left: 5.0rem;
+    margin-right:5.0rem;
+    font-weight: bold;
+    border-width: 2px;
+    border-radius: 2.0rem;
+    padding: 2.0rem;
+    
+   
+    
+}
+
+.textos-pesquisa-jogos{
+
+    font-family: verdana;
+    font-size: 1.4rem;
+    margin-left: 24.5rem;
+    margin-bottom: 0.5rem;
+    position:relative;
+    top: 1.0rem;
+    
+
+}
+
+.imagens-pesquisa-jogos{
+
+    border-width:1px;
+    border-radius: 2.0rem;
+    margin-top: -9.0rem;
+
+   
+
+}
+
+
+
+#slider {
+  width: 350px;
+  height: 250px;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid black;
+  bottom: 120px;
+  margin-bottom: -7.0rem;
+  margin-top: -5.5rem;
+}
+
+#slider .slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  animation: fade 10s infinite;
+  object-fit: cover;
+}
+
+#slider .slide1 {
+  animation-delay: 0s; 
+}
+#slider .slide2 {
+  animation-delay: 3s;
+}
+
+#slider .slide3 {
+  animation-delay: 5s;
+}
+/* Animação de fade */
+@keyframes fade {
+  0%   { opacity: 1; }
+  45%  { opacity: 1; }
+  50%  { opacity: 0; }
+  95%  { opacity: 0; }
+  100% { opacity: 1; }
+
+}
+
+.estrelas-nao-interativas .estrela {
+  color: #ffcd00; /* Cor da estrela */
+  font-size: 30px; /* Tamanho da estrela */
+}
+
+.estrelas-nao-interativas .estrela-vazia {
+  color: #cccccc; /* Cor da estrela vazia */
+  font-size: 20px;
+}
+
+
