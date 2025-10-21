@@ -1,0 +1,74 @@
+<html>
+
+<html lang= "pt-br">
+
+<head>
+<meta charset="utf-8">
+<title>GameStation</title>
+
+<link rel="stylesheet" type="text/css" href="../css/estilos.css">
+
+</head>
+
+<body>
+
+
+	<header  id="cabeçalho">
+		<img id="gamepad" src="../img/gamepad1.png" alt="Gamepad" width="200" height="160">
+		<h1 id="títulocabeçalho">GameStation</h1>
+		<h3 id="h3-cabeçalho"><em>O seu portal para o mundo dos games!</em></h3>
+
+		<button id="botão-menu" onclick="abrirMenuLateral()">☰ Menu</button>
+
+        <script>
+			//Função para abrir e fechar menu lateral na página
+			function abrirMenuLateral() {
+				document.getElementById('menu-lateral').style.width = '250px';
+
+			}
+
+			function fecharMenuLateral() {
+
+				document.getElementById('menu-lateral').style.width = '0';
+			}
+
+		  </script>
+		
+		<form id="barra-pesquisa" onsubmit="return buscarPagina(event)">
+  			<input id="barra-pesquisa-input" type="search" name="q" placeholder="Pesquisar...">
+  			<button id="barra-pesquisa-button" type="submit">Buscar</button>
+		</form>
+
+		<script>
+
+			// Função para buscar a página com base no termo pesquisado
+			function buscarPagina(event) {
+
+				event.preventDefault();
+			    const termo = document.getElementById('barra-pesquisa-input').value.trim().toLowerCase();
+			
+				if(termo) {
+
+					window.location.href = termo + '.html'
+				}
+			}
+
+		</script>
+    </header>
+    <br><br>
+
+	<a href="tomb-raider.html" class="botao-jogos-pesquisa">
+    <section class="jogos">
+        
+        <h2 class="textos-pesquisa-jogos">Tomb Raider</h2>
+            
+        <p class="textos-pesquisa-jogos">O reboot de 2013 apresenta uma jovem Lara Croft em sua primeira grande aventura, lutando para sobreviver em uma ilha hostil enquanto descobre sua força e coragem.</p>
+        <img class="imagens-pesquisa-jogos" src="../img/tombraider.jpg" alt="Tomb Raider" width="300" height="200">    
+    
+    </section>
+    </a>
+    
+
+    
+
+</body>
