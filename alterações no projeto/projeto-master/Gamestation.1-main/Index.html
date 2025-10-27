@@ -1,0 +1,131 @@
+
+<html>
+
+<html lang= "pt-br">
+
+<head>
+<meta charset="utf-8">
+<title>GameStation</title>
+
+<link rel="stylesheet" type="text/css" href="src/css/estilos.css">
+
+</head>
+
+<body>
+
+
+	<header  id="cabeçalho">
+		<img id="gamepad" src="src/img/gamepad1.png" alt="Gamepad" width="200" height="160">
+		<h1 id="títulocabeçalho">GameStation</h1>
+		<h3 id="h3-cabeçalho"><em>O seu portal para o mundo dos games!</em></h3>
+
+		<button id="botão-menu" onclick="abrirMenuLateral()">☰ Menu</button>
+
+	      <section id="menu-lateral">
+			<a href="javascript:void(0)" onclick="fecharMenuLateral()" style="position:absolute; top:5; right:15px; font-size:30px; margin-left:50px; background-color: #FFD700; border: solid 1px black; border-radius: 50%; padding: 0.3rem 1rem; color: black; text-decoration: none;">&times;</a>
+			<a class="Botões-laterais" href="src/html/jogos de corrida.html">Jogos de Corrida</a>
+			<br><br><br>
+			<a class="Botões-laterais" href="jogos de ação.html">Jogos de ação</a>
+
+		   </section>
+
+		  <script>
+			//Função para abrir e fechar menu lateral na página
+			function abrirMenuLateral() {
+				document.getElementById('menu-lateral').style.width = '250px';
+
+			}
+
+			function fecharMenuLateral() {
+
+				document.getElementById('menu-lateral').style.width = '0';
+			}
+
+		  </script>
+		
+		<form id="barra-pesquisa" onsubmit="return buscarPagina(event)">
+  			<input id="barra-pesquisa-input" type="search" name="q" placeholder="Pesquisar...">
+  			<button id="barra-pesquisa-button" type="submit">Buscar</button>
+		</form>
+
+		<script>
+
+			// Função para buscar a página com base no termo pesquisado
+			function buscarPagina(event) {
+
+				event.preventDefault();
+			    const termo = document.getElementById('barra-pesquisa-input').value.trim().toLowerCase();
+			
+				if(termo) {
+
+					window.location.href = termo + '.html'
+				}
+			}
+
+		</script>
+	
+	</header>
+	<br><br>
+
+	<section id="categorias">
+		<h1 id="texto-categorias">Categorias</h1>
+		<br><br>
+
+		<div id="lista-categorias">
+			<a class="categoria" href="src/html/jogos de corrida.html">Corrida</a>
+			<img id="icone-corrida" src="src/img/icone-corrida.png" alt="Ícone Corrida" width="50" height="50" >
+			<a class="categoria" href="src/html/jogos de ação.html">Ação</a>
+			<a class="categoria" href="jogos de aventura.html">Aventura</a>
+			<a class="categoria" href="jogos de simulação.html">Simulação</a>
+			<a class="categoria" href="jogos de rpg.html">RPG</a>
+		</div>
+
+	</section>
+	<br><br>
+
+	<section id="ultimas-noticias">
+
+		<h1 id="texto-ultimas-noticias">Últimas Notícias</h1>
+
+	</section>
+	
+	<br><br>
+	<section id="top-páginas-acessadas-do-site">
+
+		<h1 id="top-páginas-acessadas">Páginas mais acessadas do site</h1>
+
+	</section>
+
+	<section id="newsletter">
+
+		<h1 id="newsletter-title">Newsletter</h1>
+
+		<form action="salvar-inscrição.php"  method="post" id="newsletter-form">
+			<label for="email">Inscreva-se para receber as últimas notícias e atualizações sobre o mundo dos jogos!:</label><br>
+			<input type="email" id="email" class="inputs-form" name="email" placeholder="Digite seu email" required>
+			<input type="text" id="nome" class="inputs-form" name="nome" placeholder="Digite seu nome" required>
+			<br><br>
+			<button type="submit" class="inputs-form">Inscrever-se</button>
+	</section>
+
+
+	<footer id="rodapé">
+
+		<p>© 2025 GameStation. Todos os direitos reservados.</p>
+		
+
+	</footer>
+
+	
+
+
+
+	
+	
+	
+
+</body>
+
+
+
+</html>
