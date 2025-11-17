@@ -1,0 +1,367 @@
+<html>
+
+<html lang= "pt-br">
+
+<head>
+<meta charset="utf-8">
+<title>GameStation</title>
+
+<link rel="stylesheet" type="text/css" href="../css/estilos.css">
+
+</head>
+
+<body>
+
+
+	<header  id="cabeçalho">
+		<img id="gamepad" src="../img/gamepad1.png" alt="Gamepad" width="200" height="160">
+		<h1 id="títulocabeçalho">GameStation</h1>
+		<h3 id="h3-cabeçalho"><em>O seu portal para o mundo dos games!</em></h3>
+
+		<button id="botão-menu" onclick="abrirMenuLateral()">☰ Menu</button>
+
+        <script>
+			//Função para abrir e fechar menu lateral na página
+			function abrirMenuLateral() {
+				document.getElementById('menu-lateral').style.width = '250px';
+
+			}
+
+			function fecharMenuLateral() {
+
+				document.getElementById('menu-lateral').style.width = '0';
+			}
+
+		  </script>
+		
+		<form id="barra-pesquisa" onsubmit="return buscarPagina(event)">
+  			<input id="barra-pesquisa-input" type="search" name="q" placeholder="Pesquisar...">
+  			<button id="barra-pesquisa-button" type="submit">Buscar</button>
+		</form>
+
+		<script>
+
+			// Função para buscar a página com base no termo pesquisado
+			function buscarPagina(event) {
+
+				event.preventDefault();
+			    const termo = document.getElementById('barra-pesquisa-input').value.trim().toLowerCase();
+			
+				if(termo) {
+
+					window.location.href = termo + '.html'
+				}
+			}
+
+		</script>
+    </header>
+    <br><br>
+<a href="Hollow Knight.html" style="text-decoration: none; color: black;">
+    <section class="jogos">
+
+<h2 class="textos-pesquisa-jogos">Hollow Knight</h2>
+
+<p class="textos-pesquisa-jogos">Hollow Knight é um jogo de ação e aventura desenvolvido pela Team Cherry. Lançado em 2017, o jogo se passa em um vasto mundo subterrâneo chamado Hallownest, onde os jogadores assumem o papel de um cavaleiro silencioso em uma jornada para desvendar os mistérios do reino e enfrentar inimigos desafiadores.</p>
+
+<div id="slider">
+
+<img src="../img/hollow 3.jpg" alt="Imagem 1" class="slide slide1">
+<img src="../img/hollow.jpg" alt="Imagem 2" class="slide slide2">
+<img src="../img/hollow 2.jpg" alt="Imagem 3" class="slide slide3">
+
+</div>
+
+<p style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 23px;">Data de Lançamento: 24 de fevereiro de 2017</p>
+
+
+<div class="estrelas-nao-interativas">
+	     <p style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 25px;">Avaliação dos Jogadores</p>
+
+		 <div class="estrelas-nao-interativas" title="5.0">
+        <span class="estrela">&#9733;</span> 
+        <span class="estrela">&#9733;</span>
+        <span class="estrela">&#9733;</span>
+        <span class="estrela">&#9733;</span> 
+        <span class="estrela">&#9733;</span>
+        </div>
+</div>
+
+<div>
+
+<div class="Ícones das Plataformas">
+
+<p style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 25px;">Plataformas:</p>
+
+<a href="https://store.steampowered.com/app/367520/Hollow_Knight/" title="Steam" target="_blank"><img src="../img/Steam.jpeg" alt="Ícone das Plataformas" width="50" height="50"/></a>
+<a href="https://store.playstation.com/pt-br/product/UP1822-CUSA13632_00-HOLLOWKNIGHT18US" title="PlayStation Store" target="_blank"><img src="../img/Playstation.jpeg" title="Playstation" width="50" height="50"/></a>
+<a href="https://www.xbox.com/pt-BR/games/store/hollow-knight-edicao-coracao-vazio/9MW9469V91LM/0010" title="Xbox" target="_blank"><img src="../img/Xbox.jpeg" alt="Ícone das Plataformas" width="50" height="50"/></a>
+<a href="https://www.nintendo.com/pt-br/store/products/hollow-knight-switch/" title="Nintendo Switch" target="_blank"><img src="../img/Nintendo.jpeg" alt="Ícone das Plataformas" width="50" height="50"/></a>
+
+<p>Clique para nos ícones para mais informação &uarr;</p>
+
+</div>
+
+<p style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 25px;">Recomendação de Idade:</p>
+
+<img src="../img/10 anos.png" title="10 anos" alt="Ícone de idade" width="70" height="70">
+
+</section>
+    </a>
+	<br><br>
+
+
+<a href="Minecraft.html" style="text-decoration: none; color: black;">
+    <section class="jogos">
+
+<h2 class="textos-pesquisa-jogos">Minecraft BedrockEdition/JavaEdition</h2>
+
+<p class="textos-pesquisa-jogos">Minecraft é um jogo sandbox/aventura desenvolvido pela Mojang Studios, lançado inicialmente em 2011. O jogo permite aos jogadores explorar um mundo gerado proceduralmente, construindo estruturas e sobrevivendo a desafios em um ambiente tridimensional composto por blocos.</p>
+
+<div id="slider">
+
+<img src="../img/minecraft.jpg" alt="Imagem 1" class="slide slide1">
+<img src="../img/minecraft 2.jpg" alt="Imagem 2" class="slide slide2">
+<img src="../img/minecraft 3.jpg" alt="Imagem 3" class="slide slide3">
+
+</div>
+
+<p style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 23px;">Data de Lançamento: 17 de maio de 2009</p>
+
+<div class="estrelas-nao-interativas">
+         <p style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 25px;">Avaliação dos Jogadores</p>
+
+         <div class="estrelas-nao-interativas" title="5.0">
+        <span class="estrela">&#9733;</span> 
+        <span class="estrela">&#9733;</span>
+        <span class="estrela">&#9733;</span>
+        <span class="estrela">&#9733;</span> 
+        <span class="estrela">&#9733;</span>
+        </div>
+
+</div>
+
+<div>
+
+<div class="Ícones de Plataformas">
+
+<p style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 25px;">Plataformas:</p>
+
+<a href="https://www.minecraft.net/pt-br/download" title="Microsoft" target="_blank"><img src="../img/microsoft logo.png" alt="Ícone das Plataformas" width="50" height="50"/></a>
+<a href="https://store.playstation.com/pt-br/product/UP4433-CUSA00744_00-MINECRAFTPS40001" title="PlayStation Store" target="_blank"><img src="../img/Playstation.jpeg" title="Playstation" width="50" height="50"/></a>
+<a href="https://www.xbox.com/pt-br/games/store/minecraft/9mvxmvt8zkwc" title="Xbox" target="_blank"><img src="../img/Xbox.jpeg" alt="Ícone das Plataformas" width="50" height="50"/></a>
+<a href="https://www.nintendo.com/pt-br/store/products/minecraft-switch/" title="Nintendo Switch" target="_blank"><img src="../img/Nintendo.jpeg" alt="Ícone das Plataformas" width="50" height="50"/></a>
+<a href="https://play.google.com/store/search?q=minecraft&c=apps&hl=pt_BR" title="Android" target="_blank"><img src="../img/celular.png" alt="Ícone das Plataformas" width="50" height="50"/></a>
+<a href="https://apps.apple.com/br/app/minecraft-jogo-de-constru%C3%A7%C3%A3o/id479516143" title="Iphone" target="_blank"><img src="../img/Iphone.png" alt="Ícone das Plataformas" width="50" height="50"/></a>
+<a href="https://www.vivecraft.org/" title="VR" target="_blank"><img src="../img/VR.png" alt="Ícone das Plataformas" width="50" height="50"/></a>
+
+<p>Clique para nos ícones para mais informação &uarr;</p>
+
+</div>
+
+<p style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 25px;">Recomendação de Idade:</p>
+
+<img src="../img/idade livre.png" title="Livre" alt="Ícone de idade" width="70" height="70">
+
+</section>
+    </a>
+    <br><br>
+
+<a href="Horizon Zero Dawn.html" style="text-decoration: none; color: black;">
+<section class="jogos">
+
+<h2 class="textos-pesquisa-jogos">Horizon Zero Dawn</h2>
+
+<p class="textos-pesquisa-jogos">Horizon Zero Dawn é um jogo de ação e aventura desenvolvido pela Guerrilla Games e publicado pela Sony Interactive Entertainment. Lançado em 2017, o jogo se passa em um futuro pós-apocalíptico onde a humanidade vive em tribos primitivas e enfrenta criaturas robóticas gigantes.</p>
+
+<div id="slider">
+
+<img src="../img/zero dawn.jpg" alt="Imagem 1" class="slide slide1">
+<img src="../img/zero dawn 2.jpg" alt="Imagem 2" class="slide slide2">
+<img src="../img/zero dawn 3.jpg" alt="Imagem 3" class="slide slide3">
+
+</div>
+
+<p style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 23px;">Data de Lançamento: 28 de fevereiro de 2017</p>
+
+<div class="estrelas-nao-interativas">
+         <p style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 25px;">Avaliação dos Jogadores:</p>
+
+         <div class="estrelas-nao-interativas" title="5.0">
+        <span class="estrela">&#9733;</span> 
+        <span class="estrela">&#9733;</span>
+        <span class="estrela">&#9733;</span>
+        <span class="estrela">&#9733;</span> 
+        <span class="estrela">&#9733;</span>
+        </div>
+</div>
+
+<div>
+
+<div class="Ícones das Plataformas">
+
+<p style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 25px;">Plataformas:</p>
+
+<a href="https://store.steampowered.com/app/2561580/Horizon_Zero_Dawn_Remastered/" title="PlayStation Store" target="_blank"><img src="../img/Playstation.jpeg" title="Playstation" width="50" height="50"/></a>
+<a href="https://store.playstation.com/pt-br/product/UP9000-CUSA28561_00-FORBIDDENWESTPS4" title="Steam" target="_blank"><img src="../img/Steam.jpeg" alt="Ícone das Plataformas" width="50" height="50"/></a>
+
+<p>Clique para nos ícones para mais informação &uarr;</p>
+
+</div>
+
+<p style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 25px;">Recomendação de Idade:</p>
+
+<img src="../img/16 anos.png" title="16 anos" alt="Ícone de idade" width="70" height="70">
+
+</section>
+    </a>
+    <br><br>
+
+<a href="Assassin’s Creed Odyssey.html" style="text-decoration: none; color: black;">
+<section class="jogos">
+
+<h2 class="textos-pesquisa-jogos">Assassin’s Creed Odyssey</h2>
+
+<p class="textos-pesquisa-jogos">Assassin's Creed Odyssey é um jogo de ação e aventura desenvolvido pela Ubisoft Quebec e publicado pela Ubisoft. Lançado em 2018, o jogo se passa na Grécia Antiga durante a Guerra do Peloponeso e permite aos jogadores explorar um vasto mundo aberto enquanto assumem o papel de um mercenário espartano.</p>
+
+<div id="slider">
+
+<img src="../img/odyssey.jpg" alt="Imagem 1" class="slide slide1">
+<img src="../img/odyssey 2.jpg" alt="Imagem 2" class="slide slide2">
+<img src="../img/odyssey 3.jpg" alt="Imagem 3" class="slide slide3">
+
+</div>
+
+<p style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 23px;">Data de Lançamento: 5 de outubro de 2018</p>
+
+
+<div class="estrelas-nao-interativas">
+         <p style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 25px;">Avaliação dos Jogadores:</p>
+
+         <div class="estrelas-nao-interativas" title="5.0">
+        <span class="estrela">&#9733;</span> 
+        <span class="estrela">&#9733;</span>
+        <span class="estrela">&#9733;</span>
+        <span class="estrela">&#9733;</span> 
+        <span class="estrela">&#9733;</span>
+        </div>
+</div>
+
+<p style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 25px;">Plataformas:</p>
+
+<a href="https://store.playstation.com/pt-br/product/UP0001-CUSA09311_00-GAME000000000000" title="Steam" target="_blank"><img src="../img/Steam.jpeg" alt="Ícone das Plataformas" width="50" height="57"></a>
+ 
+<a href="https://store.steampowered.com/app/812140/Assassins_Creed_Odyssey/" title="Playstation" target="_blank"><img src="../img/Playstation.jpeg" alt="Ícone de Plataformas" width="70" height="57"></a>
+
+<a href="https://www.xbox.com/pt-BR/games/store/assassins-creed-odyssey/BW9TWC8L4JCS/0001" title="Xbox" target="_blank"><img src="../img/Xbox.jpeg" alt="Ícone de Plataformas" width="70" height="57"></a> 
+
+<p>Clique para nos ícones para mais informação &uarr;</p>
+
+</div>
+
+<p style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 25px;">Recomendação de Idade:</p>
+
+<img src="../img/18 anos.png" title="18 anos" alt="Ícone de idade" width="70" height="70">
+
+</section>
+</a>
+<br><br>
+
+<a href="Shawdon Of The Colossus.html" style="text-decoration: none; color: black;">
+<section class="jogos">
+
+<h2 class="textos-pesquisa-jogos">Shadow Of The Colossus</h2>
+
+<p class="textos-pesquisa-jogos">Shadow of the Colossus é um jogo de ação e aventura desenvolvido pela Team Ico e publicado pela Sony Computer Entertainment. Lançado originalmente em 2005 para o PlayStation 2, o jogo foi posteriormente remasterizado para o PlayStation 3 e refeito para o PlayStation 4.</p>
+
+<div id="slider">
+
+<img src="../img/shadow 1.jpg" alt="Imagem 1" class="slide slide1">
+<img src="../img/shadow 2.jpg" alt="Imagem 2" class="slide slide2">
+<img src="../img/shadow 3.jpg" alt="Imagem 3" class="slide slide3">
+
+</div>
+
+<p style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 23px;">Data de Lançamento: 18 de outubro de 2018</p>
+
+<div class="estrelas-nao-interativas">
+         <p style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 25px;">Avaliação dos Jogadores:</p>
+
+         <div class="estrelas-nao-interativas" title="5.0">
+        <span class="estrela">&#9733;</span> 
+        <span class="estrela">&#9733;</span>
+        <span class="estrela">&#9733;</span>
+        <span class="estrela">&#9733;</span> 
+        <span class="estrela">&#9733;</span>
+        </div>
+</div>
+
+<p style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 25px;">Plataformas:</p>
+
+<a href="https://store.playstation.com/pt-br/product/UP9000-CUSA08034_00-SOTC0000000000US" title="Playstation" target="_blank"><img src="../img/Playstation.jpeg" alt="Ícone de Plataformas" width="70" height="57"></a>
+
+<p>Clique para nos ícones para mais informação &uarr;</p>
+
+</div>
+
+<p style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 25px;">Recomendação de Idade:</p>
+
+<img src="../img/12 anos.png" title="12 anos" alt="Ícone de idade" width="70" height="70">
+
+</section>
+</a>
+<br><br>
+
+<footer id="rodapé">
+		<p>© 2024 GameStation. Todos os direitos reservados.</p>
+		<p>Desenvolvido por Equipe GameStation.</p>
+	</footer>
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
